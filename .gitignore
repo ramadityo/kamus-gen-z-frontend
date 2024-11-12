@@ -23,6 +23,8 @@
 # misc
 .DS_Store
 *.pem
+.vscode
+package-lock.json*
 
 # debug
 npm-debug.log*
@@ -39,4 +41,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-.vscode
+
