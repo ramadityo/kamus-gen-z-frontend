@@ -25,6 +25,8 @@
 *.pem
 .vscode
 package-lock.json*
+pnpm-lock.yaml
+yarn.lock
 
 # debug
 npm-debug.log*
@@ -40,5 +42,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-
