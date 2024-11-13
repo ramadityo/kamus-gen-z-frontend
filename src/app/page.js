@@ -35,7 +35,7 @@ export default function Home() {
                     <div className="container mx-auto mobile:px-4 tablet:px-6">
                         <div className="flex flex-col items-center space-y-4 text-center ">
                             <div className="space-y-2">
-                                <img alt="Logo" className="mx-auto h-24 w-24" src="/placeholder.svg?height=96&width=96" />
+                                <img alt="Logo" className="mx-auto h-24 w-24" src="/logo.webp?height=126&width=126" />
                                 <div className="space-y-4">
                                     <h1 className={`mobile:text-3xl tracking-tighter tablet:text-4xl desktop:text-5xl text-6xl font-sans font-semibold text-red`}>Selamat datang di Kamus Gen Z</h1>
                                     <p className={`mx-auto max-w-[700px] text-gray-500 text-xl dark:text-gray-400 font-sans font-normal`}>Cari bahasa gaul Gen Z beserta artinya.</p>
