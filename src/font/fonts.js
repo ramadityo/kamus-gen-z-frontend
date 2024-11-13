@@ -1,20 +1,20 @@
-import { Noto_Sans } from "next/font/google";
+import { Outfit } from "next/font/google";
 
-const NotoSansReg = Noto_Sans({
+const OutfitReg = Outfit({
     weight: "400",
     subsets: ["latin"],
 });
-const NotoSansMed = Noto_Sans({
+const OutfitMed = Outfit({
     weight: "500",
     subsets: ["latin"],
 });
-const NotoSansSemBold = Noto_Sans({
+const OutfitSemBold = Outfit({
     weight: "600",
     subsets: ["latin"],
 });
-const NotoSansBold = Noto_Sans({
+const OutfitBold = Outfit({
     weight: "700",
     subsets: ["latin"],
 });
 
-export default { NotoSansReg, NotoSansMed, NotoSansSemBold, NotoSansBold };
+export { OutfitReg, OutfitMed, OutfitSemBold, OutfitBold };
