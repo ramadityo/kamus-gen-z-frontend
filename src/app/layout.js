@@ -1,5 +1,12 @@
 import localFont from "next/font/local";
+import { Outfit } from "next/font/google";
 import "./globals.css";
+
+const outfit = Outfit({
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-outfit",
+});
 
 export const metadata = {
     title: "Kamus Gen Z | IMPHNEN",
@@ -9,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={`antialiased`}>{children}</body>
+            <body className={`antialiased ${outfit.variable}`}>{children}</body>
         </html>
     );
 }
