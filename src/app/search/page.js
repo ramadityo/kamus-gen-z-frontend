@@ -1,17 +1,20 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import React from "react";
-import { Suspense } from "react";
+import React, { Suspense } from "react";
 
-export default function Search() {
+function SearchContent() {
     const searchParams = useSearchParams();
     const query = searchParams.get("q");
 
+    return <h1>Ini hasilnya = {query}</h1>;
+}
+
+export default function Search() {
     return (
         <div className="w-full h-screen bg-red">
-            <Suspense>
-                <h1>Ini hasilnya = {query}</h1>
+            <Suspense fallback={<div>Loading...</div>}>
+                <SearchContent />
             </Suspense>
         </div>
     );
