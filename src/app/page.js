@@ -43,9 +43,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="w-full max-w-sm space-y-2">
-                                <Suspense>
-                                    <FormSearch />
-                                </Suspense>
+                                <FormSearch />
                             </div>
                         </div>
                     </div>
