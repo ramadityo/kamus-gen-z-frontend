@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 
 import { OutfitReg, OutfitMed, OutfitSemBold, OutfitBold } from "@/font/fonts";
 import FormSearch from "@/components/form/FormSearch";
+import { Suspense } from "react";
 
 export default function Home() {
     return (
@@ -42,7 +43,9 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className="w-full max-w-sm space-y-2">
-                                <FormSearch />
+                                <Suspense>
+                                    <FormSearch />
+                                </Suspense>
                             </div>
                         </div>
                     </div>
