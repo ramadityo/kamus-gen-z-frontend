@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import React from "react";
+import { Suspense } from "react";
 
 export default function Search() {
     const searchParams = useSearchParams();
@@ -9,7 +10,9 @@ export default function Search() {
 
     return (
         <div className="w-full h-screen bg-red">
-            <h1>Ini hasilnya = {query}</h1>
+            <Suspense>
+                <h1>Ini hasilnya = {query}</h1>
+            </Suspense>
         </div>
     );
 }
