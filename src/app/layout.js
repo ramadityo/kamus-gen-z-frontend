@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/navbar/Navbar";
 
 const outfit = Outfit({
     subsets: ["latin"],
@@ -16,7 +17,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={`antialiased ${outfit.variable}`}>{children}</body>
+            <body className={`antialiased bg-white ${outfit.variable}`}>
+                <Navbar />
+                <main>{children}</main>
+            </body>
         </html>
     );
 }
