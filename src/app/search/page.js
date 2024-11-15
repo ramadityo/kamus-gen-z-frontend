@@ -1,14 +1,12 @@
 import React, { Suspense } from "react";
 
-import GetQuery from "@/utils/GetQuery";
+import FormResult from "@/components/form/FormResult";
 
 export default function Search() {
     return (
-        <div className="w-full h-screen bg-red">
-            <Suspense fallback={<div>Loading...</div>}>
-                <p>
-                    Search: <GetQuery />
-                </p>
+        <div className="w-full mobile:pt-12 tablet:pt-24 pt-32 ">
+            <Suspense>
+                <FormResult />
             </Suspense>
         </div>
     );
