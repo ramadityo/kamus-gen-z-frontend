@@ -15,8 +15,16 @@ function FormResult() {
     useEffect(() => {
         async function fetchData() {
             const data = await GetData(query);
-            setWord(data.data[0].word);
-            setDesc(data.data[0].wordDescription);
+
+            if (data && data.data && data.data.length > 0) {
+                const dataWord = data.data[0].word;
+                const dataDesc = data.data[0].wordDescription;
+                setWord(dataWord);
+                setDesc(dataDesc);
+            } else {
+                setWord("404");
+                setDesc("Belum ada cuy, coba cari yang lain.");
+            }
         }
         if (query) {
             fetchData();
