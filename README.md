@@ -1,4 +1,4 @@
-<img src="./assets/banner.webp">
+<img src="./public/banner.webp">
 
 <h1 align="center">
   Web Kamus Gen Z
@@ -8,13 +8,13 @@ Yup sesuai dengan judulnya, repositori ini diperuntukkan untuk tampilan layout w
 
 Project dibangun diatas Tech Stack
 
--   [Next.js](https://nextjs.org/)
--   [TailwindCSS](https://tailwindcss.com/)
--   [ShadCN/UI](https://ui.shadcn.com/)
+- [Next.js](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [ShadCN/UI](https://ui.shadcn.com/)
 
 ---
 
-<img src="./assets/kontributor.webp">
+<img src="./public/kontributor.webp">
 <h1 align="center">
   Dicari Kontributor!!
 </h1>
