@@ -1,6 +1,6 @@
-import Image from 'next/image'
-
-import FormSearch from '@/components/form/FormSearch'
+import FormSearch from "@/components/form/FormSearch";
+import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -19,12 +19,16 @@ export default function Home() {
                 />
                 <div className="space-y-4">
                   <h1
-                    className={`mobile:text-3xl tablet:text-4xl desktop:text-5xl text-6xl font-sans font-semibold text-red`}
+                    className={cn(
+                      "mobile:text-3xl tablet:text-4xl desktop:text-5xl text-6xl font-sans font-semibold text-red",
+                    )}
                   >
                     Selamat datang di Kamus Gen Z
                   </h1>
                   <p
-                    className={`mx-auto max-w-[700px] text-gray-500 text-xl dark:text-gray-400 font-sans font-normal`}
+                    className={cn(
+                      "mx-auto max-w-[700px] text-gray-500 text-xl dark:text-gray-400 font-sans font-normal",
+                    )}
                   >
                     Cari bahasa gaul Gen Z beserta artinya.
                   </p>
@@ -32,9 +36,9 @@ export default function Home() {
               </div>
               <div className="w-full max-w-sm space-y-2">
                 <FormSearch
-                  placeholder={'Cari kata gaul...'}
+                  placeholder="Cari kata gaul..."
                   useButton={true}
-                  newClassname={'rounded-full border border-mauve'}
+                  newClassname="rounded-full border border-mauve"
                 />
               </div>
             </div>
@@ -42,5 +46,5 @@ export default function Home() {
         </section>
       </main>
     </div>
-  )
+  );
 }
