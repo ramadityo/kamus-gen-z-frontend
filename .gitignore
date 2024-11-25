@@ -37,6 +37,9 @@ yarn-error.log*
 .env*
 !.env.example
 
+.prettierrc
+.prettierrc.json
+
 # vercel
 .vercel
 
